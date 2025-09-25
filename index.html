@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dino T-Rex Runner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-root">
+    <div id="logo"><img src="Photo/Logogame.png" alt="Team Logo" /></div>
+    <div id="hud">
+      <div id="score">00000</div>
+      <div id="hiscore">HI 00000</div>
+    </div>
+
+    <div id="game" aria-label="Dino Runner" role="application">
+      <div class="bg">
+        <div class="sky"></div>
+        <div class="sun"></div>
+        <div class="clouds">
+          <div class="cloud c1"></div>
+          <div class="cloud c2"></div>
+          <div class="cloud c3"></div>
+        </div>
+        <div class="birds"></div>
+        <div class="hills">
+          <div class="hill layer1"></div>
+          <div class="hill layer2"></div>
+          <div class="hill layer3"></div>
+        </div>
+      </div>
+      <div id="ground"></div>
+      <div id="dino" class="run" data-sprite="Photo/trex.png">
+        <div class="leg leg-left"></div>
+        <div class="leg leg-right"></div>
+      </div>
+      <!-- Obstacles will be injected here -->
+    </div>
+
+    <div id="overlay">
+      <div class="title">Nhấn Space/Up hoặc chạm để nhảy</div>
+      <div class="subtitle">Nhấn Enter để chơi lại khi thua</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
